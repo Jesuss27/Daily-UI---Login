@@ -51,23 +51,26 @@ p{
     justify-content: space-between;
     flex-direction: column;
     position:relative;
-    height:40vw;
+    height:80vh;
     width:30vw;
+    min-height:600px;
+    max-width:800px;
 
 }
 .input-wrapper{
     display:flex;
     flex-direction:column;
     position:relative;
-    height:5vw;
+    height:75px;
     overflow:hidden;
 }
 .text-inputs{
     width:100%;
     height:100%;
-    padding-top:20px;
+    padding-top:45px;
     border:none;
     outline:none;
+    font-size:14px
 }
 
 .input-wrapper .label{
@@ -108,8 +111,8 @@ p{
 
 .input-wrapper input:focus + .label .content,
 .input-wrapper input:valid + .label .content{
-    transform:translateY(-15px);
-    font-size:14px;
+    transform:translateY(-30px);
+    font-size:16px;
     color:rgb(116, 163, 250);
 }
 
@@ -124,7 +127,7 @@ p{
     display:flex;
     align-items: center;
     justify-content: space-around;
-    padding: 1em ;
+    padding: 1vw 2vw ;
     border-radius:10px;
     background:transparent;
     border:1px solid #707070;
@@ -135,13 +138,13 @@ p{
 .or{
     width:100%;
     text-align: center;
-    font-size:28px;
+    font-size:2vw;
 }
 
 .create-account{
     width:100%;
     padding:1.5em 3em;
-    font-size: 20px;
+    font-size: 1vw;
     border-radius:10px;
     color:white;
     background: var(--button);
@@ -167,6 +170,9 @@ p{
     width:100%;
     height:100%;
 }
+.already{
+    font-size:1vw;
+}
 
 @media screen and (max-width:1720px){
     .social-buttons{
@@ -175,7 +181,7 @@ p{
     }
     .social-button{
         margin:.5em 0em;
-        width:250px;
+        width:60%;
 
     }
     
@@ -187,7 +193,7 @@ p{
     }
     .social-button{
         margin:.5em 0em;
-        width:250px;
+        width:60%;
 
     }
     
@@ -198,6 +204,65 @@ p{
     } 
     .info{
         padding-left:2em;
+    }
+    
+}
+@media screen and (max-width:1025px){
+    .form-container{
+        padding:5vw;
+    } 
+    .form{
+        justify-content:space-around;
+        width:30vw;
+    }
+    .svg-container{
+        display:none;
+    }
+
+    
+    
+}
+@media screen and (max-width:500px){
+   .info{
+       display:none;
+   }
+   h2{
+       font-size:30px;
+   }
+   .select-language{
+       margin-bottom:1em;
+       right:2em;
+   }
+   .form-container{
+       width:100%;
+       border-radius: 0;
+       padding:1em 2em;
+   }
+   .form{
+       width:100%;
+       margin:0;
+   }
+   .content{
+       font-size:4vw;
+   }
+   .or{
+       font-size:5vw;
+   }
+   p{
+       font-size:4vw;
+   }
+.create-account{
+    font-size:16px;
+}
+.already{
+    font-size:12px;
+}
+    .social-buttons{
+        justify-content: center;
+        align-items:center;
+    }
+    .social-button{
+        width:100%;
     }
     
 }
